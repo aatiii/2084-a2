@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,10 +76,66 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="author-list.aspx" />
+    <Content Include="book-detail.aspx" />
+    <Content Include="css\styles.css" />
+    <Content Include="genre-list.aspx" />
+    <Content Include="new-book.aspx" />
+    <Content Include="time-list.aspx" />
+    <Content Include="title-list.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="author-list.aspx.cs">
+      <DependentUpon>author-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="author-list.aspx.designer.cs">
+      <DependentUpon>author-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="book-detail.aspx.cs">
+      <DependentUpon>book-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book-detail.aspx.designer.cs">
+      <DependentUpon>book-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="genre-list.aspx.cs">
+      <DependentUpon>genre-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="genre-list.aspx.designer.cs">
+      <DependentUpon>genre-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new-book.aspx.cs">
+      <DependentUpon>new-book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new-book.aspx.designer.cs">
+      <DependentUpon>new-book.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="time-list.aspx.cs">
+      <DependentUpon>time-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="time-list.aspx.designer.cs">
+      <DependentUpon>time-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="title-list.aspx.cs">
+      <DependentUpon>title-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="title-list.aspx.designer.cs">
+      <DependentUpon>title-list.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

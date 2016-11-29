@@ -7,14 +7,48 @@
     <title>comp 2084 assignment 2</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+  
 </head>
 <body>
     <form id="form1" runat="server">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+              <a id="logo-container" href="#" class="brand-logo">My Reading Log</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#">Add new book</a></li>
+              </ul>
+
+              <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Add new book</a></li>
+              </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+          </nav>
+
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
     </form>
+
+    
+  <footer class="page-footer teal">
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="footera" href="#">Hailun Li - Comp2084 A2</a>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+     
 </body>
 </html>
