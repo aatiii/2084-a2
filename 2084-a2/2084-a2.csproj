@@ -76,16 +76,28 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="author-list-detail.aspx" />
     <Content Include="author-list.aspx" />
     <Content Include="book-detail.aspx" />
     <Content Include="css\styles.css" />
+    <Content Include="default.aspx" />
+    <Content Include="genre-list-detail.aspx" />
     <Content Include="genre-list.aspx" />
     <Content Include="new-book.aspx" />
+    <Content Include="time-list-detail.aspx" />
     <Content Include="time-list.aspx" />
+    <Content Include="title-list-detail.aspx" />
     <Content Include="title-list.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="author-list-detail.aspx.cs">
+      <DependentUpon>author-list-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="author-list-detail.aspx.designer.cs">
+      <DependentUpon>author-list-detail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="author-list.aspx.cs">
       <DependentUpon>author-list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,6 +111,20 @@
     </Compile>
     <Compile Include="book-detail.aspx.designer.cs">
       <DependentUpon>book-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="genre-list-detail.aspx.cs">
+      <DependentUpon>genre-list-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="genre-list-detail.aspx.designer.cs">
+      <DependentUpon>genre-list-detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="genre-list.aspx.cs">
       <DependentUpon>genre-list.aspx</DependentUpon>
@@ -122,12 +148,26 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="time-list-detail.aspx.cs">
+      <DependentUpon>time-list-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="time-list-detail.aspx.designer.cs">
+      <DependentUpon>time-list-detail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="time-list.aspx.cs">
       <DependentUpon>time-list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="time-list.aspx.designer.cs">
       <DependentUpon>time-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="title-list-detail.aspx.cs">
+      <DependentUpon>title-list-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="title-list-detail.aspx.designer.cs">
+      <DependentUpon>title-list-detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="title-list.aspx.cs">
       <DependentUpon>title-list.aspx</DependentUpon>

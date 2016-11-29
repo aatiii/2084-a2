@@ -18,9 +18,9 @@
     <form id="form1" runat="server">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-              <a id="logo-container" href="#" class="brand-logo">My Reading Log</a>
+              <a id="logo-container" href="default.aspx" class="brand-logo">My Reading Log</a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="#">Add new book</a></li>
+                <li><a class="btn-floating waves-effect waves-light teal" href="new-book.aspx"><i class="material-icons addicon">add</i></a></li>
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
@@ -38,12 +38,12 @@
     </form>
 
     
-  <footer class="page-footer teal">
-    <div class="footer-copyright">
-      <div class="container">
-        <a class="footera" href="#">Hailun Li - Comp2084 A2</a>
+  <footer class="page-footer cyan lighten-4">
+    
+      <div class="container footera">
+        <a href="#">Hailun Li - Comp2084 A2</a>
       </div>
-    </div>
+    
   </footer>
 
     <!-- Compiled and minified JavaScript -->

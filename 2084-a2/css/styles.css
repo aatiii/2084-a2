@@ -47,6 +47,16 @@ p {
 footer.page-footer {
   margin: 0;
 }
-.footer-copyright .footera {
-    color: #ddd;
+.footera a {
+    color: #333;
+}
+.footera {
+    padding-bottom: 20px;
+}
+.home.container {
+  min-height: 550px;
+  padding-top: 30px;
+}
+nav .nav-wrapper i.addicon, nav a.button-collapse i.addicon {
+    line-height: 43px;
 }
