@@ -22,7 +22,7 @@
             </div>
 
             <asp:Button CssClass="waves-effect waves-light btn" id="btnLogin" runat="server" 
-                  Text="Login" />                
+                  Text="Login" OnClick="btnLogin_Click" />                
 
         </div>
         </div>

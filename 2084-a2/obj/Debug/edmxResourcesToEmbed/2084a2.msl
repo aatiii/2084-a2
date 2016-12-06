@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbModelStoreContainer" CdmEntityContainer="assm2Entities">
+    <EntitySetMapping Name="authors">
+      <EntityTypeMapping TypeName="dbModel.author">
+        <MappingFragment StoreEntitySet="author">
+          <ScalarProperty Name="authorId" ColumnName="authorId" />
+          <ScalarProperty Name="author1" ColumnName="author" />
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="books">
+      <EntityTypeMapping TypeName="dbModel.book">
+        <MappingFragment StoreEntitySet="book">
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="review" ColumnName="review" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="genres">
+      <EntityTypeMapping TypeName="dbModel.genre">
+        <MappingFragment StoreEntitySet="genre">
+          <ScalarProperty Name="genreId" ColumnName="genreId" />
+          <ScalarProperty Name="genre1" ColumnName="genre" />
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reviews">
+      <EntityTypeMapping TypeName="dbModel.review">
+        <MappingFragment StoreEntitySet="review">
+          <ScalarProperty Name="reviewId" ColumnName="reviewId" />
+          <ScalarProperty Name="review1" ColumnName="review" />
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="dbModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="timeId" ColumnName="timeId" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="times">
+      <EntityTypeMapping TypeName="dbModel.time">
+        <MappingFragment StoreEntitySet="time">
+          <ScalarProperty Name="timeId" ColumnName="timeId" />
+          <ScalarProperty Name="time1" ColumnName="time" />
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="titles">
+      <EntityTypeMapping TypeName="dbModel.title">
+        <MappingFragment StoreEntitySet="title">
+          <ScalarProperty Name="titleId" ColumnName="titleId" />
+          <ScalarProperty Name="title1" ColumnName="title" />
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
