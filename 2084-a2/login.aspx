@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="_2084_a2.register" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="_2084_a2.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -6,7 +6,7 @@
         
         <div class="row">
         <div class="col s12">
-
+            
             <div class="row">                
             <div class="input-field col s12">
                 <asp:TextBox id="txtUsername" class="validate" runat="server" required />
@@ -21,8 +21,8 @@
             </div>
             </div>
 
-            <asp:Button CssClass="waves-effect waves-light btn" id="btnRegister" runat="server" 
-                OnClick="btnRegister_Click" Text="Create Account" />                
+            <asp:Button CssClass="waves-effect waves-light btn" id="btnLogin" runat="server" 
+                  Text="Login" />                
 
         </div>
         </div>
