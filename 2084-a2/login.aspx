@@ -6,7 +6,9 @@
         
         <div class="row">
         <div class="col s12">
-            
+            <div class="card-panel teal lighten-5">
+                <asp:Label ID="lblMessage" runat="server" Text="Please enter user name and password" />
+            </div>
             <div class="row">                
             <div class="input-field col s12">
                 <asp:TextBox id="txtUsername" class="validate" runat="server" required />

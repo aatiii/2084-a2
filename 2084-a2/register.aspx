@@ -6,6 +6,9 @@
         
         <div class="row">
         <div class="col s12">
+            <div class="card-panel teal lighten-5">
+                <asp:Label ID="lblMessage" runat="server" Text="Please create an account" />
+            </div>
 
             <div class="row">                
             <div class="input-field col s12">
@@ -21,8 +24,7 @@
             </div>
             </div>
 
-            <asp:Button CssClass="waves-effect waves-light btn" id="btnRegister" runat="server" 
-                OnClick="btnRegister_Click" Text="Create Account" />                
+            <asp:Button CssClass="waves-effect waves-light btn" id="btnRegister" runat="server" Text="Create Account" OnClick="btnRegister_Click1" />                
 
         </div>
         </div>
