@@ -20,10 +20,14 @@
             <div class="nav-wrapper container">
               <a id="logo-container" href="default.aspx" class="brand-logo">My Reading Log</a>
               <ul class="right hide-on-med-and-down">
-                <li><a class="btn-floating waves-effect waves-light teal" href="new-book.aspx"><i class="material-icons addicon">add</i></a></li>
-                <li><a href="logout.aspx">Logout</a></li>
-                <li><a href="register.aspx">Register</a></li>
-                <li><a href="login.aspx">Login</a></li>
+                  <asp:PlaceHolder ID="plhPrivate" runat="server" Visible="false">
+                    <li><a class="btn-floating waves-effect waves-light teal" href="new-book.aspx"><i class="material-icons addicon">add</i></a></li>
+                    <li><a href="logout.aspx">Logout</a></li>
+                  </asp:PlaceHolder>
+                  <asp:PlaceHolder ID="plhPublic" runat="server">
+                    <li><a href="register.aspx">Register</a></li>
+                    <li><a href="login.aspx">Login</a></li>
+                  </asp:PlaceHolder>
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
