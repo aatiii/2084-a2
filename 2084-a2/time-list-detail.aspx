@@ -22,6 +22,5 @@
 
         </div>
     </div>
-    <div class="parallax"><img src="http://placehold.it/1200x400" alt="Unsplashed background img 1"></div>
     </div>
 </asp:Content>

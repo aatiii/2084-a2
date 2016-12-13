@@ -16,11 +16,11 @@ namespace _2084_a2
             //call the GetTitles function to populate the grid
             if (!IsPostBack)
             {
-                GetTitles();
+                GetTimes();
             }
         }
 
-        protected void GetGenres()
+        protected void GetTimes()
         {
             using (DefaultConnection db = new DefaultConnection())
             {

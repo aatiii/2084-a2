@@ -6,7 +6,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <h3>Time List</h3>
-            <asp:GridView ID="grdGenre" runat="server" CssClass="table table-striped" autogeneratecolumns="false">
+            <asp:GridView ID="grdTime" runat="server" CssClass="table table-striped" autogeneratecolumns="false">
                 <Columns>
                     <asp:BoundField DataField="timeId" HeaderText="Time ID" />
                     <asp:BoundField DataField="time" HeaderText="Time" />

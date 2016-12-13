@@ -16,7 +16,7 @@ namespace _2084_a2
             //call the GetBooks function to populate the grid
             if (!IsPostBack)
             {
-                GetBooks();
+                GetTitle();
             }
         }
 

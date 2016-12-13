@@ -13,12 +13,12 @@ namespace _2084_a2 {
     public partial class time_list {
         
         /// <summary>
-        /// grdGenre control.
+        /// grdTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdGenre;
+        protected global::System.Web.UI.WebControls.GridView grdTime;
     }
 }

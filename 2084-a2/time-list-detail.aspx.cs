@@ -13,9 +13,13 @@ namespace _2084_a2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //call the GetTitles function to populate the grid
+            if (!IsPostBack)
+            {
+                GetTimes();
+            }
         }
-        protected void GetGenres()
+        protected void GetTimes()
         {
             using (DefaultConnection db = new DefaultConnection())
             {
