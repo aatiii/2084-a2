@@ -60,3 +60,10 @@ footer.page-footer {
 nav .nav-wrapper i.addicon, nav a.button-collapse i.addicon {
     line-height: 43px;
 }
+
+.input-field {
+    color: #333;
+}
+.input-field .validate {
+    margin-top: 15px;
+}

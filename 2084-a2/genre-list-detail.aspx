@@ -5,18 +5,20 @@
     <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
         <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">test genre list d</h1>
-        <div class="row center">
-            <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        </div>
-        <div class="row center">
-            <a href="book-detail.aspx" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
+            <br><br>
+            <h1 class="header center teal-text text-lighten-2">Genre: </h1>        
+            <br><br>
+            <asp:GridView ID="grdGenre-detail" runat="server" CssClass="table table-striped" autogeneratecolumns="false">
+                <Columns>
+                    <asp:BoundField DataField="bookId" HeaderText="Book ID" />
+                    <asp:BoundField DataField="title" HeaderText="Title" />
+                    <asp:BoundField DataField="author" HeaderText="Author" />
+                    <asp:BoundField DataField="genre" HeaderText="Genre" />
+                    <asp:BoundField DataField="time" HeaderText="Time" />
+                </Columns>
+            </asp:GridView>
+        
         </div>
     </div>
-    <div class="parallax"><img src="http://placehold.it/1200x400" alt="Unsplashed background img 1"></div>
     </div>
 </asp:Content>
