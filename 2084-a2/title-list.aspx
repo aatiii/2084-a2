@@ -6,10 +6,12 @@
     <div class="section no-pad-bot">
         <div class="container">
             <h3>Time List</h3>
-            <asp:GridView ID="grdtitle" runat="server" CssClass="table table-striped" autogeneratecolumns="false">
+            <asp:GridView ID="grdTitle" runat="server" CssClass="table table-striped" autogeneratecolumns="false">
                 <Columns>
                     <asp:BoundField DataField="titleId" HeaderText="Title ID" />
                     <asp:BoundField DataField="title" HeaderText="Title" />
+                    <asp:HyperLinkField HeaderText="View Detail" NavigateUrl="title-list-detail.aspx" Text="More..."
+             DataNavigateUrlFormatString="title-list-detail.aspx?titleID={0}" DataNavigateUrlFields="titleID"/>                       
                 </Columns>
             </asp:GridView>
         </div>

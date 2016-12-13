@@ -13,12 +13,12 @@ namespace _2084_a2 {
     public partial class title_list {
         
         /// <summary>
-        /// grdtitle control.
+        /// grdTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdtitle;
+        protected global::System.Web.UI.WebControls.GridView grdTitle;
     }
 }

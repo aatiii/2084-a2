@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using _2084_a2.Models;
+
 namespace _2084_a2
 {
     public partial class time_list_detail : System.Web.UI.Page
@@ -12,6 +14,19 @@ namespace _2084_a2
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+        protected void GetGenres()
+        {
+            using (DefaultConnection db = new DefaultConnection())
+            {
+                //query the time table
+                var time = from t in db.time
+                           select t;
+
+                //bind the result to the gridview
+                grdTime.DataSource = time.ToList();
+                grdTime.DataBind();
+            }
         }
     }
 }

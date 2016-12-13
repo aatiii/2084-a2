@@ -13,12 +13,12 @@ namespace _2084_a2 {
     public partial class genre_list_detail {
         
         /// <summary>
-        /// grdGenre-detail control.
+        /// grdGenre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdGenre-detail;
+        protected global::System.Web.UI.WebControls.GridView grdGenre;
     }
 }

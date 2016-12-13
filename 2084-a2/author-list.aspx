@@ -10,6 +10,8 @@
                 <Columns>
                     <asp:BoundField DataField="authorId" HeaderText="Author ID" />
                     <asp:BoundField DataField="author" HeaderText="Author" />
+                    <asp:HyperLinkField HeaderText="View Detail" NavigateUrl="author-list-detail.aspx" Text="More..."
+             DataNavigateUrlFormatString="author-list-detail.aspx?authorID={0}" DataNavigateUrlFields="authorID"/>                       
                 </Columns>
             </asp:GridView>
 

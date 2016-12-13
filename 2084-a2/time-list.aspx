@@ -10,6 +10,9 @@
                 <Columns>
                     <asp:BoundField DataField="timeId" HeaderText="Time ID" />
                     <asp:BoundField DataField="time" HeaderText="Time" />
+                    <asp:HyperLinkField HeaderText="View Detail" NavigateUrl="time-list-detail.aspx" Text="More..."
+             DataNavigateUrlFormatString="time-list-detail.aspx?timeID={0}" DataNavigateUrlFields="timeID"/>       
+                
                 </Columns>
             </asp:GridView>
 

@@ -6,15 +6,17 @@
     <div class="section no-pad-bot">
         <div class="container">
             <br><br>
-            <h1 class="header center teal-text text-lighten-2">Genre: </h1>        
+            <h3 class="header center teal-text text-lighten-2">Sort by Genre </h3>        
             <br><br>
-            <asp:GridView ID="grdGenre-detail" runat="server" CssClass="table table-striped" autogeneratecolumns="false">
+            <asp:GridView ID="grdGenre" runat="server" CssClass="table table-striped" autogeneratecolumns="false">
                 <Columns>
                     <asp:BoundField DataField="bookId" HeaderText="Book ID" />
                     <asp:BoundField DataField="title" HeaderText="Title" />
                     <asp:BoundField DataField="author" HeaderText="Author" />
                     <asp:BoundField DataField="genre" HeaderText="Genre" />
                     <asp:BoundField DataField="time" HeaderText="Time" />
+                    <asp:HyperLinkField HeaderText="View Detail" NavigateUrl="book-detail.aspx" Text="View Detail"
+             DataNavigateUrlFormatString="book-detail.aspx?bookID={0}" DataNavigateUrlFields="bookID"/>
                 </Columns>
             </asp:GridView>
         

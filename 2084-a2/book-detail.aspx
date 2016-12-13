@@ -13,7 +13,6 @@
                     <asp:BoundField DataField="genre" HeaderText="Genre" />
                     <asp:BoundField DataField="time" HeaderText="Time" />                    
                     <asp:BoundField DataField="review" HeaderText="Book Review" />
-
                 </Columns>
             </asp:GridView>
 
